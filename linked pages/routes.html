@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Routes</title>
+    <style>
+        /* Defaults */
+        *{margin: 0; padding: 0;}
+
+        /* Animation */
+        .map{
+            background: url(../images/routesbg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            position: relative;
+        }
+
+        .map >img{
+            transform: translate(50%, 50%);
+            position: absolute;
+            top: 50%;
+            left: 63%;
+            animation-name: nair;
+            animation-duration: 10s;
+            animation-delay: 2s;
+        }
+
+        @keyframes nair{
+            0%{left: 68%; top: 45%;}
+            25%{left: 70%; top: 50%;}
+            50%{left: 75%; top: 40%;}
+            75%{left: 80%; top:80%;}
+            100%{left: 68%; top: 45%;}
+        }
+    </style>
+</head>
+<body>
+    <div class="map">
+        <img src="../images/plane.png" alt="aircraft in motion" width="50px" height="30px">
+    </div>
+    <br>
+    <br>
+    <center>
+        <caption>A Few Flight Routes</caption>
+        <table border="3px solid black" cellspacing="0" width="500px">
+        <tr>
+            <th style="padding: 17px; background-color: yellow;">HUB</th>
+            <th style="padding: 17px; background-color: yellow;">DOMESTIC</th>
+            <th style="padding: 17px; background-color: yellow;">INT'L</th>
+        </tr>
+        <tr>
+            <td style="padding: 17px" rowspan="4">VNKT</td>
+            <td style="padding: 17px">PKR</td>
+            <td style="padding: 17px">BKK</td>
+        </tr> 
+        <tr> 
+            <!-- <td style="padding: 17px;">VNKT</td> -->
+            <td style="padding: 17px;">BDR</td>
+            <td style="padding: 17px;">BOM</td>
+        </tr>
+        
+        <tr>
+            <!-- <td style="padding: 17px;">VNKT</td> -->
+            <td style="padding: 17px;">BIR</td>
+            <td style="padding: 17px;">KUL</td>
+        </tr> 
+        <tr> 
+            <!-- <td style="padding: 17px;">VNKT</td> -->
+            <td style="padding: 17px;">SIM</td>
+            <td style="padding: 17px;">DOH</td>
+        </tr>
+    </table>
+    </center>
+</body>
+</html>

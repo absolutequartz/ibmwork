@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Wise Survey 2023</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* color: white; */
+    line-height: 1.5;
+}
+
+.formless{
+     margin-left: 150px;
+     margin-right: 150px;
+}
+body{
+    background: url(../images/bgform.jpg) no-repeat;
+    background-size: cover;
+}
+
+.PersonalDetails{
+    border-radius: 18px;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 20px;
+}
+
+.MCQs{
+    border-radius: 18px;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 20px;
+}
+
+form{
+    padding: 90px;
+}
+
+legend{
+    font-size: 35px;
+    color: white;
+}
+
+label{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+span{
+    color: white;
+}
+
+input{
+    font-size: 15px;
+    padding: 5px;
+}
+
+.submit{
+    padding: 15px;
+    width: 300px;
+    margin-top: 14px;
+    font-size: large;
+    text-transform: uppercase;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="formless">
+    <form action="destination.html" target="new_tab">
+        <center><legend><b>Please Provide Us Feedback From Your Last Flight</b></legend></center>
+        <fieldset class="PersonalDetails">
+            <label for="name"><b>Enter Your Name</b></label> <br>
+            <input type="text" name="name" size="50"> <br> <br>
+            <label for="journey"><b> Flight route</b></label> <br>
+            <input type="text" name="journey" size="70"> <br> <br>
+            <label for="gender"><b>Specify your gender</b></label> <br>
+            <input type="checkbox" name="gender"> <span>Male</span> <br>
+            <input type="checkbox" name="gender"> <span>Female</span> <br>
+            <input type="checkbox" name="gender" disabled> <span>Others</span> <br> <br>
+            <!-- <strong>Note:</strong> No other Gender exists :) -->
+        </fieldset>
+        <br>
+        <fieldset class="MCQs">
+            <label for="vehicle"><b>Favorite aspect of the Journey?</b></label> <br> <br>
+            <select name="vehicle" id="vehicle">
+                <option value="Gcar">Hospitality</option>
+                <option value="EV" >Food</option>
+                <option value="Gcar">Cabin Crew</option>
+            </select>
+            <br> <br>
+            <label for="improvement">What else can we improve?</label> <br>
+            <textarea name="improvement" id="imp" cols="80" rows="10"></textarea>
+        </fieldset>
+        <center><input type="submit" class="submit"></center>
+    </form>
+    </div>
+</body>
+</html>

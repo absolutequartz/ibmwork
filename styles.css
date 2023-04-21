@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+}
+
+/* Header */
+.wrapper{
+    height: 80vh;
+    background: rgba(0, 0, 0, 0.5) url(./images/wrapbg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+}
+
+/* The Navbar */
+
+.navbar{
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    background-color: transparent;
+    backdrop-filter: blur(25px);
+    z-index: 10;
+}
+
+.navbar >img{
+   padding-top: 20px;
+}
+
+.navbar >ul{
+    display: flex;
+    justify-content: flex-end;
+    /* justify-self: flex-end; */
+    list-style-type: none;
+    padding-top: 20px;
+    float: right;
+}
+
+.navbar >ul >li{
+    padding-left:14px;
+    padding-right: 8px;
+    font-size: 20px;
+}
+
+a:link{
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 15px;
+}
+
+a:visited{
+    color: white;
+    font-size: 18px;
+}
+
+a:hover{
+    font-size: 20px;
+    box-shadow: 6px 6px;
+}
+
+/* Main Portion */
+#fleet{
+    position: relative;
+}
+
+#fleet::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, transparent, black);
+    z-index: 3;
+}
+
+main{
+    position: relative;
+}
+
+body{
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.fleet{
+    width: 80%;
+    /* margin-left: 150px; */
+    transform: translate(-50%,0%);
+    position: absolute;
+    /* top: 50%; */
+    left: 50%;
+    /* border: 1px solid black; */
+    padding: 34px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.infleet{
+    width: 100%;
+}
+
+.infleet >img{
+    float: left;
+    width: 40%;
+}
+
+.infleet >p{
+    float: right;
+    font-size: 20px;
+    width: 55%;
+}
+
+.reviews{
+    width: 80%;
+    margin-top: 400px;
+    transform: translate(-50%, 0%);
+    position: relative;
+    top: 0%;
+    left: 50%;
+    /* border: 1px solid black; */
+    padding: 34px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 30vh;
+}
+
+.inreviews{
+    width: 100%;
+    
+}
+
+.inreviews >p{
+    font-size: 20px;
+    float: right;
+    width: 86%;
+}
+
+
+.pfp1{
+    border-radius: 120px;
+    float: left;
+    width: 12%;
+}
+
+/* Footer */
+
+footer{
+    width: 70%;
+}
